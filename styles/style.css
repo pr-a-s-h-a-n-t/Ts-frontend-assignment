@@ -1,0 +1,81 @@
+/* importing font */
+@import url("./font/font.css");
+@import url("./font/t.css");
+
+/* Resetting the default values! */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "graphik";
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+ul,
+li {
+  margin: 0;
+  list-style: none;
+}
+
+a:focus {
+  outline: 1px dotted #000;
+}
+
+*:active,
+*:focus-visible {
+  outline: none;
+}
+
+@media screen and (max-width: 468px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 1268px) {
+}
+
+@media screen and (min-width: 1468px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+/* special case */
+@media screen and (min-width: 468px) and (max-width: 768px) {
+}
+
+.p {
+  font-weight: normal;
+
+  letter-spacing: 1.2px;
+  font: normal normal bold 38px/44px Graphik;
+  color: #5d5d6e;
+}
+
+h2 {
+  text-align: left;
+   font
+  letter-spacing: 1.2px;
+  color: #5d5d6e;
+  opacity: 1;
+}
