@@ -2,10 +2,12 @@
 @import url("./font/font.css");
 @import url("./font/t.css");
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&family=Rubik+Iso&display=swap");
+
 /* Resetting the default values! */
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 a,
@@ -42,6 +44,297 @@ a:focus {
   outline: none;
 }
 
+.p {
+  font-weight: normal;
+
+  letter-spacing: 1.2px;
+  font: normal normal bold 38px/44px Graphik;
+  color: #5d5d6e;
+}
+
+h2 {
+  text-align: left;
+
+  letter-spacing: 1.2px;
+  color: #5d5d6e;
+  opacity: 1;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* nav bar */
+.site-navbar,
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-navbar {
+  padding: 0 clamp(6px, 1.156vw, 16px);
+}
+
+.site-navbar > ul {
+  column-gap: clamp(8px, 4.33vw, 60px);
+}
+
+.site-navbar ul li > a {
+  font: normal normal 600 15px/20px Segoe UI;
+  letter-spacing: 0px;
+  color: #4a4a4a;
+  opacity: 1;
+}
+.site_logo {
+  width: clamp(135px, 16.97vw, 235px);
+  height: clamp(40px, 4.55vh, 63px);
+}
+
+.demo_btn {
+  width: clamp(108px, 9.1vw, 126px);
+  height: clamp(34px, 2.6vh, 36px);
+  background: #0537ac 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 3px #00000029;
+  border-radius: 9px;
+  opacity: 1;
+  font: normal normal 600 14px/19px Segoe UI;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+/* nav-toggler css start */
+.nav-toggler {
+  border: 3px solid #fff;
+  padding: 5px;
+  /* background-color: transparent; */
+  cursor: pointer;
+  height: 39px;
+  display: none;
+}
+.nav-toggler span,
+.nav-toggler span:before,
+.nav-toggler span:after {
+  width: 28px;
+  height: 4px;
+  background-color: #170909;
+  display: block;
+  transition: 0.3s;
+}
+.nav-toggler span:before {
+  content: "";
+  transform: translateY(-9px);
+}
+.nav-toggler span:after {
+  content: "";
+  transform: translateY(6px);
+}
+.nav-toggler.toggler-open span {
+  background-color: transparent;
+}
+.nav-toggler.toggler-open span:before {
+  transform: translateY(0px) rotate(45deg);
+}
+.nav-toggler.toggler-open span:after {
+  transform: translateY(-3px) rotate(-45deg);
+}
+/* nav-toggler css start */
+
+/* nav-toggler css start */
+.nav-toggler {
+  border: 3px solid #fff;
+  padding: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  height: 39px;
+  display: none;
+}
+.nav-toggler span,
+.nav-toggler span:before,
+.nav-toggler span:after {
+  width: 28px;
+  height: 3px;
+  background-color: #170909;
+  display: block;
+  transition: 0.3s;
+}
+.nav-toggler span:before {
+  content: "";
+  transform: translateY(-9px);
+}
+.nav-toggler span:after {
+  content: "";
+  transform: translateY(6px);
+}
+.nav-toggler.toggler-open span {
+  background-color: transparent;
+}
+.nav-toggler.toggler-open span:before {
+  transform: translateY(0px) rotate(45deg);
+}
+.nav-toggler.toggler-open span:after {
+  transform: translateY(-3px) rotate(-45deg);
+}
+/* nav-toggler css start */
+
+/* mobile breakpoint start */
+@media screen and (max-width: 767px) {
+  .site-navbar {
+    max-width: 720px;
+  }
+  .demo_btn {
+    display: none;
+  }
+  /* navbar css for mobile start */
+  .nav-toggler {
+    display: block;
+  }
+  .site-navbar {
+    min-height: 60px;
+  }
+  .site-navbar ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 60px);
+    left: 0;
+    top: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 1px solid #444;
+    background-color: #000000;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  .site-navbar ul li {
+    width: 100%;
+    text-align: center;
+  }
+  .site-navbar ul li a {
+    padding: 25px;
+  }
+  .site-navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .site-navbar ul.open {
+    max-height: 100vh;
+    overflow: visible;
+  }
+
+  /* navbar css for mobile end */
+}
+/* mobile breakpoint end */
+
+/* demo section start */
+._demo {
+  width: 100%;
+  /* height: 347px; */
+  margin: auto;
+  background: #468fec 0% 0% no-repeat padding-box;
+  opacity: 1;
+  padding-top: 67px;
+  padding-bottom: 55px;
+}
+
+._demo > h2 {
+  text-align: center;
+  font: normal normal bold 27px/54px Roboto;
+  letter-spacing: 1.08px;
+  color: #ffffff;
+  margin-bottom: 22px;
+}
+
+._demo > p {
+  max-width: 940px;
+  text-align: center;
+  margin: auto;
+  /* font: normal normal normal 22px/27px Roboto; */
+  font-family: "roboto";
+  font-size: clamp(13px, 1.58vw, 22px);
+  line-height: clamp(22px, 1.95vh, 27px);
+
+  letter-spacing: clamp(0.65px, 0.063vw, 0.88px);
+  color: #ffffff;
+  padding-bottom: 11px;
+}
+
+._demo > button {
+  width: clamp(108px, 11.99vw, 166px);
+  height: clamp(36px, 6vh, 49px);
+  background: #ffc500 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  font: normal normal bold 13px/53px Roboto;
+  letter-spacing: 0.52px;
+  color: #ffffff;
+  margin: auto;
+}
+/* demo section end */
+
+/* benefit's section start */
+
+._benefits{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 74px;
+}
+
+._benefits > h2{
+  text-align: center;
+font: normal normal 600 22px/34px Graphik;
+letter-spacing: 0.66px;
+text-transform: uppercase;
+}
+
+
+._benefits_list {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* ._benefits_list div > img {
+  width: 247px;
+  height: 165px;
+} */
+
+._expert{
+  width: 247px;
+  height: 165px;
+}
+
+
+._me{
+  width: 220px;
+  height: 162px;
+}
+
+._support{
+  width: 240px;
+height: 160px;
+}
+
+._trust{
+  width: 209px;
+height: 157px;
+}
+
+._benefits_list div >h3{
+  text-align: center;
+  margin-top: 22px;
+font: normal normal medium 17px/27px Graphik;
+letter-spacing: 0.51px;
+color: #3F3F3F;
+}
+
+/* benefit's section end */
+
 @media screen and (max-width: 468px) {
 }
 
@@ -62,20 +355,4 @@ a:focus {
 
 /* special case */
 @media screen and (min-width: 468px) and (max-width: 768px) {
-}
-
-.p {
-  font-weight: normal;
-
-  letter-spacing: 1.2px;
-  font: normal normal bold 38px/44px Graphik;
-  color: #5d5d6e;
-}
-
-h2 {
-  text-align: left;
-   font
-  letter-spacing: 1.2px;
-  color: #5d5d6e;
-  opacity: 1;
 }
