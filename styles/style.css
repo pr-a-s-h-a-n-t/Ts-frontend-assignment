@@ -8,6 +8,8 @@
 * {
   margin: 0px;
   padding: 0px;
+  max-width: 1384px;
+  box-sizing: border-box;
 }
 
 a,
@@ -228,10 +230,117 @@ ul {
 }
 /* mobile breakpoint end */
 
+/* mobile breakpoint end */
+/* 
+
+- - -
+-
+
+-
+-
+--
+-
+)
+
+
+
+
+
+
+
+*/
+
+/* Hero section  Start */
+/* .polygon{
+  width: 1201px;
+height: 1147px;
+transform: matrix(-0.89, 0.45, -0.45, -0.89, 0, 0);
+/* UI Properties  
+background: transparent linear-gradient(120deg, #0C4CF7 0%, #4AA0FC 100%) 0% 0% no-repeat padding-box;
+opacity: 0.79;
+} */
+
+/* .u{
+  float: right;
+  width: 250px;
+  height: 160px;
+  shape-outside: polygon(0 0, 100% 50%, 0 100%);
+  background-color: #0537ac;
+} */
+._heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+  max-width: 562px;
+  border: 2px solid black;
+}
+._heading > h1 {
+  width: clamp(277px, 38vw, 526px);
+  text-align: left;
+  font-size: clamp(20px, 2.74vw, 38px);
+  line-height: clamp(20px, 3.179vw, 44px);
+  font-family: "graphik";
+  letter-spacing: 1.14px;
+  color: #363636;
+  opacity: 1;
+  margin-bottom: clamp(22px, 2.89vw, 40px);
+}
+
+._heading > h3 {
+  width: clamp(305px, 40.67vw, 563px);
+
+  /* UI Properties */
+  text-align: left;
+
+  font-size: clamp(13px, 2.31vw, 32px);
+  line-height: clamp(22px, 2.3vw, 33px);
+  font-family: "graphik";
+  letter-spacing: 1.2px;
+  color: #5d5d6e;
+  margin-bottom: clamp(0px, 1.58vw, 22px);
+}
+
+._hero_btn {
+  display: flex;
+  column-gap: clamp(15px, 1.58vw, 22px);
+  max-width: 340px;
+  flex-wrap: wrap;
+}
+
+.start_btn {
+  width: clamp(108px, 11.416vw, 158px);
+  height: clamp(34px, 3.5vh, 49px);
+  /* UI Properties */
+  background: #ffa200 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  text-align: center;
+  font-size: clamp(10px, 1.08vw, 15px);
+  line-height: clamp(13px, 1.44vh, 20px);
+  font-family: "roboto";
+  letter-spacing: 0.54px;
+  color: #ffffff;
+}
+.contact_btn {
+  width: clamp(108px, 11.416vw, 158px);
+  height: clamp(34px, 3.5vh, 49px);
+  border: 2px solid #ffa200;
+  border-radius: 8px;
+  text-align: center;
+
+  font-size: clamp(10px, 1.08vw, 15px);
+  line-height: clamp(13px, 1.44vh, 20px);
+  font-family: "roboto";
+  letter-spacing: 0.54px;
+  color: #ffa200;
+}
+
+/* Hero section  end */
+
 /* demo section start */
 ._demo {
   width: 100%;
-  /* height: 347px; */
+
   margin: auto;
   background: #468fec 0% 0% no-repeat padding-box;
   opacity: 1;
@@ -275,7 +384,7 @@ ul {
 
 /* benefit's section start */
 
-._benefits{
+._benefits {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -283,19 +392,18 @@ ul {
   row-gap: 74px;
 }
 
-._benefits > h2{
+._benefits > h2 {
   text-align: center;
-font: normal normal 600 22px/34px Graphik;
-letter-spacing: 0.66px;
-text-transform: uppercase;
+  font: normal normal 600 22px/34px Graphik;
+  letter-spacing: 0.66px;
+  text-transform: uppercase;
 }
-
 
 ._benefits_list {
   display: flex;
   width: 100%;
   flex-direction: row;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -304,41 +412,277 @@ text-transform: uppercase;
   height: 165px;
 } */
 
-._expert{
-  width: 247px;
-  height: 165px;
+._expert {
+  width: 210px;
+  height: 160px;
 }
 
-
-._me{
-  width: 220px;
-  height: 162px;
+._me {
+  width: 210px;
+  height: 160px;
 }
 
-._support{
-  width: 240px;
-height: 160px;
+._support {
+  width: 180px;
+  height: 160px;
 }
 
-._trust{
-  width: 209px;
-height: 157px;
+._trust {
+  width: 210px;
+  height: 160px;
 }
 
-._benefits_list div >h3{
+._benefits_list div > h3 {
   text-align: center;
   margin-top: 22px;
-font: normal normal medium 17px/27px Graphik;
-letter-spacing: 0.51px;
-color: #3F3F3F;
+  font: normal normal medium 17px/27px Graphik;
+  letter-spacing: 0.51px;
+  color: #3f3f3f;
 }
 
 /* benefit's section end */
+
+/* ------investor section start--------- */
+._investor {
+  width: 100%;
+  padding-bottom: clamp(50px, 8.6vw, 120px);
+  border: 2px solid red;
+}
+._investor > h2,
+._mentor > h2 {
+  font-size: clamp(13px, 1.1vw, 22px);
+  line-height: clamp(22px, 2.45vw, 34px);
+  font-family: "graphik";
+  letter-spacing: 1.2px;
+  color: #5d5d6e;
+  margin-bottom: clamp(10px, 2.89vw, 40px);
+  text-align: center;
+  letter-spacing: 0.66px;
+  color: #363636;
+  text-transform: uppercase;
+}
+._investor > h2 > span, ._mentor > h2 > span {
+  color: #4aa0fc;
+}
+._investor_flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 55px;
+  row-gap: 55px;
+}
+
+._investor_img {
+  width: 257px;
+  height: 72px;
+}
+
+/* ------investor section end--------- */
+
+/*----------3 steps to get Worlds most visible platform  start*/
+
+
+
+._steps{
+  width: 100%;
+}
+
+._steps >h2{
+  text-align: center;
+  font: normal normal 600 26px/34px Graphik;
+  letter-spacing: 0.78px;
+  color: #363636;
+
+
+  font-size: clamp(13px, 1.1vw, 22px);
+  line-height: clamp(22px, 2.45vw, 34px);
+  font-family: "graphik";
+  letter-spacing: 1.2px;
+  color: #5d5d6e;
+  margin-bottom: clamp(10px, 2.89vw, 40px);
+  text-align: center;
+  letter-spacing: 0.66px;
+  color: #363636;
+  text-transform: uppercase;
+}
+
+
+
+
+
+/*----------3 steps to get Worlds most visible platform  start*/
+
+/* ------mentor section start--------- */
+._investor {
+  width: 100%;
+  padding-bottom: clamp(20px, 3.6vw, 50px);
+  border: 2px solid red;
+}
+
+._mentor_img {
+  width: 267px;
+  height: 124px;
+}
+._mentor_flex {
+  display: flex;
+  justify-content: center;
+  column-gap: 70px;
+  row-gap: 15px;
+  flex-wrap: wrap;
+}
+/* ------mentor section end--------- */
+
+/* ------ achievements & news------- */
+
+._achievements {
+}
+
+.div_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.div_1 {
+  width: clamp(537px, 53.25vw 737px);
+  height: clamp(320px, 33.81vh 468px);
+
+  box-shadow: 0px 0px 14px #00000021;
+  border-radius: 21px;
+}
+
+.div_1 img {
+  width: clamp(537px, 53.25vw 737px);
+  height: clamp(268px, 26.58vh, 368px);
+  box-shadow: 0px 0px 14px #00000021;
+  border-radius: 21px;
+}
+._achievements_img img {
+  width: 231px;
+  height: 147px;
+  background: transparent url("img/1669979048209.png") 0% 0% no-repeat
+    padding-box;
+  box-shadow: 0px 0px 14px #00000021;
+  border-radius: 21px;
+}
+
+.div_3,
+.div_2 {
+  display: flex;
+  row-gap: 15px;
+  column-gap: 15px;
+}
+
+.div_2 {
+  flex-direction: column;
+}
+
+/* footer section end */
+
+._footer {
+  width: 100%;
+  height: 543px;
+  /* UI Properties */
+  padding: 50px 110px;
+  background: #003152 0% 0% no-repeat padding-box;
+}
+
+._footer_data,
+._support {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+._address > div,
+._support > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+._address div > ul,
+._support > div {
+  flex-direction: column;
+}
+
+._innerflex,
+._site_navigation {
+  display: flex;
+}
+
+._footer_form {
+  padding: 48px 22px 25px;
+  width: 380px;
+  /* height: 322px; */
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  margin: auto;
+}
+
+._footer_form form > input {
+  width: 337px;
+  height: 37px; /* UI Properties */
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 6px;
+  font: normal normal medium 10px/22px Graphik;
+  letter-spacing: 0.4px;
+  color: #9c9c9c;
+}
+
+form > textarea {
+  width: 337px;
+  height: 120px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 6px;
+}
+form > label {
+  font: normal normal medium 12px/22px Graphik;
+  letter-spacing: 0.43px;
+  color: #003152;
+}
+._footer_form form > button {
+  width: 337px;
+  height: 34px;
+  background: #ff8e2b 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+}
+
+.Gplay > img {
+  width: 185px;
+  height: 75px;
+
+  border-radius: 8px;
+}
+
+/* footer section end */
 
 @media screen and (max-width: 468px) {
 }
 
 @media screen and (max-width: 768px) {
+  /* ----achievements start----- */
+  section,
+  ._head_banner {
+    width: 100%;
+    padding: 70px 35px;
+  }
+
+  ._heading {
+    width: 100%;
+  }
+
+  .div_2 {
+    display: none !important;
+  }
+  .div_3 {
+    overflow-x: scroll;
+    width: 924px;
+    height: 150px;
+  }
+
+  /* ----achievements end----- */
 }
 
 @media screen and (max-width: 1268px) {
@@ -347,7 +691,7 @@ color: #3F3F3F;
 @media screen and (min-width: 1468px) {
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
 }
 
 @media screen and (min-width: 768px) {

@@ -23,15 +23,26 @@
 @font-face {
   font-family: "Graphik Super";
   src: url("./GraphikBold/GraphikSuper.otf") format("otf");
-  font-weight: 900;
+  /* font-weight: 900; */
   font-style: normal;
-  font-display: swap;
+  
 }
+
+ 
 
 @font-face {
   font-family: "Graphik";
   src: url("./GraphikBold/GraphikBold.otf") format("otf");
-  font-weight: bold;
+  font-weight: 900;
   font-style: normal;
-  font-display: swap;
+ 
+}
+
+
+@font-face {
+  font-family: "Graphik";
+  src: url("./GraphikBold/GraphikBlack.otf") format("otf");
+  /* font-weight: 900; */
+  font-style: normal;
+ 
 }
