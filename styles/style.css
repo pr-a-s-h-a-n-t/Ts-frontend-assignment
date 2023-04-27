@@ -491,31 +491,42 @@ opacity: 0.79;
   justify-content: center;
   align-items: end;
   column-gap: 35px;
+  flex-flow: wrap;
+    row-gap: 5rem;
 }
 
 ._steps > h2 {
   /* font: normal normal 600 26px/34px Graphik; */
   letter-spacing: 0.78px;
   color: #363636;
-
-  font-size: clamp(16px, 1.1vw, 26px);
+  max-width: 23rem;
+  font-size: clamp(16px, 2.1vw, 26px);
   line-height: clamp(22px, 2.45vw, 34px);
   font-family: "graphik";
-  /* margin-bottom: clamp(10px, 2.89vw, 40px); */
+  margin: auto;
   text-align: center;
   color: #363636;
-  text-transform: uppercase;
+
+  /* text-transform: uppercase; */
+}
+/* clamp(10px, 5.33vw, 70px) */
+._steps > hr {
+  max-width: 412px;
+  height: 4px;
+
+  margin: 11px auto 70px;
+  background: #4aa0fc 0% 0% no-repeat padding-box;
 }
 
 ._side_card {
-  width: 358px;
-  height: 462px;
+  width: clamp(280px, 25.86vw, 358px);
+  height: clamp(380px, 49.381vh, 462px);
   /* UI Properties */
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 0px 14px #00000021;
   border-radius: 21px;
   position: relative;
-  padding: 100px 37px;
+  padding: clamp(50px, 4.22vw, 100px) clamp(20px, 2.67vw, 37px);
 
   text-align: center;
 }
@@ -534,7 +545,7 @@ opacity: 0.79;
 ._side_card > p {
   max-width: 283px;
   text-align: center;
- 
+
   font-weight: normal;
   font-family: "graphik";
   font-size: clamp(12px, 1.156vw, 16px);
@@ -546,6 +557,8 @@ opacity: 0.79;
 
 ._steps_count {
   width: 83px;
+  color: #ffffff;
+  font-weight: 500;
   height: 81px;
   background: #ffa200 0% 0% no-repeat padding-box;
   box-shadow: 0px 0px 12px #00000029;
@@ -560,9 +573,9 @@ opacity: 0.79;
 }
 
 ._steps_icon {
-  width: 87px;
-  height: 87px;
-  font-size: 48px;
+  width: clamp(67px, 6.28vw, 87px);
+  height: clamp(67px, 6.28vw, 87px);
+  font-size: clamp(38px, 3.46vw, 87px);
   background: #fff8eb 0% 0% no-repeat padding-box;
   border-radius: 100%;
   margin: auto;
@@ -572,7 +585,7 @@ opacity: 0.79;
   margin-top: 10px;
   position: absolute;
   left: 50%;
-  bottom: 50px;
+  bottom: clamp(15px, 1.61vh, 50px);
   transform: translate(-50%, -50%);
 }
 
@@ -590,6 +603,8 @@ opacity: 0.79;
 
 ._steps_middle_count {
   width: 90px;
+  color: #ffffff;
+  font-weight: 500;
   height: 89px;
   background: #ffa200 0% 0% no-repeat padding-box;
   box-shadow: 0px 0px 12px #00000029;
@@ -608,7 +623,7 @@ opacity: 0.79;
 
 ._middle_card > h4 {
   text-align: center;
-  
+
   font-family: "graphik";
   font-size: clamp(14px, 1.734vw, 24px);
   line-height: clamp(22px, 2.67vw, 37px);
@@ -620,7 +635,7 @@ opacity: 0.79;
 ._middle_card > p {
   max-width: 100%;
   text-align: center;
- 
+
   font-weight: normal;
   font-family: "graphik";
   font-size: clamp(12px, 1.156vw, 16px);
